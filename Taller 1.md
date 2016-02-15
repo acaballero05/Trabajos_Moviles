@@ -3,10 +3,12 @@
 * Su estructura sigue el modelo llave-valor.
 * Realiza búsquedas en O(1).
 * Las llaves para cceder a los datos son únicas.
+
 ## List:
 * Su medio de busqueda es el índice del dato almacenado.
 * Tiene una estructura secuencial.
 * Realiza busquedas en O(n).
+
 ## Set:
 * No permite datos repetidos.  
 * Realiza busquedas de manera aleatoria.
