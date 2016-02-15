@@ -1,26 +1,13 @@
-# Encabezado h1 
-## Encabezado h2
-### Encabezado h3
-#### Encabezado h4
-##### Encabezado h5
-###### Encabezado h6
-
- *énfasis* (cursiva)
-
- **énfasis fuerte** (negrita)
-
-  ```
- Código en 
- varias líneas
- ```
-
- * Un elemento en una lista no ordenada
- * Otro elemento en una lista
-
- 1. Elemento en una lista enumerada u ordenada.
- 2. Otro elemento
-
- "Quien fue a sevilla,  
-perdió su silla"
-
- "Quien fue a sevilla, perdió su silla"
+ 1. 
+ ###### Map: 
+ *Su medio de busqueda es la llave del dato almacenado
+ *Su estructura sigue el modelo llave-valor
+ *realiza búsquedas en O(1)
+ ###### List: 
+ *Su medio de busqueda es el índice del dato almacenado
+ *Tiene una estructura secuencial
+ *Realiza busquedas en O(n)
+ ###### Set:
+ *No permite datos repetidos
+ *Realiza busquedas de manera aleatoria 
+ *Realiza busquedas en O(n)
