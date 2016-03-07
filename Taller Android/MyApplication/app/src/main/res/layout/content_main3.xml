@@ -19,7 +19,16 @@
         android:layout_weight="1"
         android:gravity="center"
         android:textColor="#ed1212"
-        android:text="@string/jugador1"/>
+        android:text=""
+        android:id="@+id/textnombre"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#ed1212"
+        android:text=""
+        android:id="@+id/textpuntaje"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

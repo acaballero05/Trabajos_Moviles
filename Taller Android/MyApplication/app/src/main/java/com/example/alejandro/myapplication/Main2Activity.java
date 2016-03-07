@@ -33,9 +33,9 @@ public class Main2Activity extends AppCompatActivity {
         EditText edit   = (EditText)findViewById(R.id.editText);
         String nombre = String.valueOf(edit.getText());
         if (nombre.equals("") || nombre.equals(null))
-            intent.putExtra("Nombre", "Jugador 1");
+            intent.putExtra("nombre", "Jugador 1");
         else
-            intent.putExtra("Nombre", nombre);
+            intent.putExtra("nombre", nombre);
         startActivity(intent);
     }
 }

@@ -6,6 +6,7 @@
     <string name="inicio2">Play Multiplayer</string>
     <string name="nombre">Concentration Game</string>
     <string name="title_activity_main2">Main2Activity</string>
-    <string name="jugador1">Name:</string>
+    <string name="jugador1">Name: </string>
+    <string name="puntaje">Points: </string>
     <string name="title_activity_main3">Main3Activity</string>
 </resources>
