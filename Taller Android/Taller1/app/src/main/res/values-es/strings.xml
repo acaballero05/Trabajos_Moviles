@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taller 1</string>
+
+    <string name="action_settings">Ajustes</string>
+    <string name="action_about">Acerca de</string>
+    <string name="action_restart">Reiniciar juego</string>
+    <string name="action_new">Nuevo juego</string>
+    <string name="action_cerrar">Cerrar</string>
+
+    <string name="nombre">Concentrese </string>
+    <string name="inicio">Jugar</string>
+    <string name="inicio2">Multijugador</string>
+
+    <string name="jugador">Escriba su nombre </string>
+    <string name="puntaje">Puntos: </string>
+
+    <string name="jugador1">Nombre jugador 1: </string>
+    <string name="jugador2">Nombre jugador 2: </string>
+
+
+    <string name="title_activity_unjugador">1 jugador</string>
+    <string name="title_activity_dosjugadores">2 jugadores</string>
+    <string name="title_activity_tablero">Juego</string>
+    <string name="title_activity_about">Acerca de</string>
+
+    <string name="dev">Desarrollado por: Alejandro Caballero Daza </string>
+    <string name="email">Correo: alejandrocaballerodaza@gmail.com</string>
+    <string name="menu">Menu</string>
+    <string name="title_activity_termino">Juego terminado</string>
+
+</resources>
