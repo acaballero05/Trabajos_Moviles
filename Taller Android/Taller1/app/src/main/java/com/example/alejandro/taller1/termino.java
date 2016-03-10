@@ -1,29 +1,57 @@
 package com.example.alejandro.taller1;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.DialogFragment;
-import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class termino extends DialogFragment {
-
-    String mensaje= getIntent().getStringExtra("mensaje");
+public class termino extends AppCompatActivity {
+    String mensaje;
+    int tipo;
 
     @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle(R.string.title_activity_termino)
-                .setItems(R.array.colors_array, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // The 'which' argument contains the index position
-                        // of the selected item
-                    }
-                });
-        return builder.create();
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_termino);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+
+        tipo=getIntent().getIntExtra("tipo", 1);
+        mensaje=getIntent().getStringExtra("mensaje");
+
+        TextView t = (TextView) findViewById(R.id.msj);
+        t.setText(mensaje);
     }
 
+    public void nuevo(View view) {
+        Intent i = new Intent(this, inicio.class);
+        startActivity(i);
+    }
+
+    public void reinicio(View view) {
+        Intent i;
+        if (tipo==1)
+            i = new Intent(this, unjugador.class);
+        else
+            i = new Intent(this, dosjugadores.class);
+        startActivity(i);
+    }
+
+    public void cerrar(View view) {
+        int p = android.os.Process.myPid();
+        android.os.Process.killProcess(p);
+    }
 }

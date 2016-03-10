@@ -723,7 +723,7 @@ public class tablero extends AppCompatActivity {
                             t.setText(String.valueOf(nombre1));
                             p.setText(Integer.toString(puntaje1));
                         }
-
+                        verificar();
                     }
                 });
             }
@@ -744,6 +744,7 @@ public class tablero extends AppCompatActivity {
             }
             Intent i = new Intent(this, termino.class);
             i.putExtra("mensaje", mensaje);
+            i.putExtra("tipo", tipo);
             startActivity(i);
 
 
