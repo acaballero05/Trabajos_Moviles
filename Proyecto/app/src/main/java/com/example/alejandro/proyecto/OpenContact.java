@@ -146,14 +146,14 @@ public class OpenContact extends ListActivity {
         String name = (dats[1]);
 
 
-        DownloadManager download;
-        download = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+        DownloadManager descarga;
+        descarga = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
         Uri uri = Uri.parse("http://192.168.250.83:8191/rest/files/"+id);
-        DownloadManager.Request request = new DownloadManager.Request(uri);
-        request.setTitle(name);
-        request.setDescription("Android Data download using DownloadManager.");
-        request.setDestinationInExternalFilesDir(this, Environment.DIRECTORY_DOWNLOADS, name);
-        download.enqueue(request);
+        DownloadManager.Request peticion = new DownloadManager.Request(uri);
+        peticion.setTitle(name);
+        peticion.setDescription("Descargando archivo.");
+        peticion.setDestinationInExternalFilesDir(this, Environment.DIRECTORY_DOWNLOADS, name);
+        descarga.enqueue(peticion);
     }
 
     public void cargarArchivos(View view) {
