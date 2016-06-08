@@ -42,7 +42,7 @@ public class GetCompartidoREST extends AsyncTask<String, Void, ArrayList<ArrayLi
         ArrayList<ArrayList<String>> cosas = new ArrayList<ArrayList<String>>();
 
 
-        for (int i=0; i<myObjects.size();i+=1){
+        for (int i=0; i<myObjects.size();i+=2){
             ArrayList<String> tmp = new ArrayList<String>();
             tmp.add(String.valueOf(myObjects.get(i).getId()));
             tmp.add(String.valueOf(myObjects.get(i).getFrom()));

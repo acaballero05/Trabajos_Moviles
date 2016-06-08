@@ -14,7 +14,7 @@ namespace ProChat.REST
         {
             var client = new RestClient("http://192.168.250.83:8191");
             var request = new RestRequest("rest/files/" + IdFile, Method.GET);
-            client.DownloadData(request).SaveAs("C:/Users/Jfmm-10/Documents/Universidad/9 Semestre/Moviles/ProChat/" + NameFile);
+            client.DownloadData(request).SaveAs("C:/Users/Alejandro/Downloads" + NameFile);
 
         }
 
